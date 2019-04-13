@@ -9,6 +9,13 @@ app.get('/pokemon/', function (req, res) {
     });
 });
 
+app.get('/pokemon/:index', function (req, res) {
+    res.render('show.ejs', {
+        pokemon:Pokemon[req.params.index]
+    });
+});
+
+
 app.listen(3000, () => {
     console.log("I am listening");
 });
