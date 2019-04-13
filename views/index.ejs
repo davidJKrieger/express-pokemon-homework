@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Catch 'Em All!</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Orienta" rel="stylesheet">
+<style>
+h1 {
+    font-family: 'Orienta', sans-serif;
+    background-color: yellow;
+    color: blue;
+    padding: 10px;
+}
+body {
+    font-family: 'Orienta', sans-serif;
+    justify: center;
+    font-family: 'Sofia';font-size: 22px;
+    color: red;
+}
+</style>
+<body>
+<h1>pokemon</h1>
+    <ul class='pokemon'>
+        <% for (let i = 0; i<pokemon.length;i++){ %>
+        <li> <a href='/pokemon/<%=i%>'> <%=pokemon[i].name; %> </li>
+        <% } %>
+    </ul>
+</body>
+</html>
