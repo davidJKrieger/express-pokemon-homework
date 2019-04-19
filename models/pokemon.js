@@ -1,4 +1,4 @@
-
+//set a variable for our data
 const pokemon = [{
         name: "Bulbasaur",
         img: "http://img.pokemondb.net/artwork/bulbasaur.jpg"
@@ -28,4 +28,5 @@ const pokemon = [{
         img: "http://img.pokemondb.net/artwork/wartortle.jpg"
     }
 ];
+//export the variable to the rest of the app
 module.exports = pokemon;

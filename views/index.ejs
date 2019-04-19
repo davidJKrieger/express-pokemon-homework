@@ -18,6 +18,21 @@ body {
     color: red;
     text-transform: uppercase;
 }
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:red; 
+     text-decoration:none;
+     cursor:pointer;  
+}
+h6{
+    margin: 20px;
+    color: orange;
+}
 
 </style>
 </head>
@@ -29,5 +44,8 @@ body {
         <li> <a href='/pokemon/<%=i%>'> <%=pokemon[i].name; %> </li>
         <% } %>
     </ul>
+<nav>
+    <h6><a href="/pokemon/new">Create a New Pokemon</a></h6>
+</nav>
 </body>
 </html>

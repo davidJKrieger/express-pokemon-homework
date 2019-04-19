@@ -14,7 +14,12 @@
 </style>
 </head>
 <body>
-    <h1><%=pokemon.name%></h1>
-    <img src=<%=pokemon.img%> >
+    <h1><%=pokemon[id].name%></h1>
+    <img src=<%=pokemon[id].img%> >
+     <h6><a href='/pokemon/<%=id%>/edit'> Edit</a></h6>
+      
+        <form action="/pokemon/<%=pokemon%>?_method=DELETE" method="POST">
+            <button type="submit">Delete</button>
+        </form>
 </body>
 </html>
