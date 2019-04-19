@@ -28,8 +28,8 @@ router.get('/new', (req, res) => {
 //restful route 5 -- edit
 router.get('/:id/edit', (req, res) => {
     res.render('edit.ejs', {
-        pokemon: pokemon,
-        id: pokemon[req.params.id]
+        pokemon: pokemon[req.params.id],
+        id: req.params.id
     });
 })
 
@@ -44,7 +44,7 @@ router.delete('/:id', (req, res) => {
 //restful route 6 -- update
 router.put('/:id', (req, res) => {
 
-    pokemon[req.params.id] = {name: req.body.name, img: req.body.img}
+    pokemon[req.params.id] = req.body
 
     res.redirect('/pokemon')
 });
